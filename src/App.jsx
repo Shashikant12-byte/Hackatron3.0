@@ -6,6 +6,8 @@ import TimerSection from './pages/TimerSection'
 import Navbar from './components/Navbar'
 import Tracks from './components/Tracks/Tracks'
 import Sponsors from './components/Sponsors/Sponsors'
+import About from './components/AboutUs/About'
+import Wihts from './components/Wihts/Wihts'
 import Faq from './components/Faq/Faq'
 import Cp from './components/Cp/Cp'
 // import CursorFollower from './components/CursorFollower';
@@ -20,6 +22,8 @@ function App() {
       {/* <CursorFollower /> */}
       <Navbar />
       <LandingPage />
+      <About/>
+      <Wihts/>
       <Hackatron2 />
       <Prizes />
       <Tracks />
