@@ -295,7 +295,7 @@ export default function Faq() {
   };
 
   return (
-    <section className="relative z-[1] py-16 px-6 text-white">
+    <section id="faq" className="relative z-[1] py-16 px-6 text-white scroll-mt-[120px]">
       
       <h2 className="text-center text-[#00FF00] mb-12 text-4xl md:text-6xl">
         FREQUENTLY ASKED QUESTIONS
