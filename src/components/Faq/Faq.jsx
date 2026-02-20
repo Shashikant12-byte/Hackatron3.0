@@ -222,64 +222,66 @@
 //   );
 // }
 
-import React, { useState,useEffect } from 'react';
-import stars from '../../assets/images/footer/stars.svg';
-import { Play } from 'lucide-react';
+ import React, { useState, useEffect } from "react";
+import { Hammer } from "lucide-react";
 
-const FaqItem = ({ question, answer, isOpen, onClick,className="" }) => {
+const FaqItem = ({ question, answer, isOpen, onClick, className = "" }) => {
   const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
+    const handleMouseMove = (e) => {
+      const { innerWidth, innerHeight } = window;
+      const x = (e.clientX / innerWidth - 0.5) * 40;
+      const y = (e.clientY / innerHeight - 0.5) * 40;
+      setBgPosition({ x, y });
+    };
 
-        const handleMouseMove = (e) => {
-            const { innerWidth, innerHeight } = window;
-            const x = (e.clientX / innerWidth - 0.5) * 60; // Adjust the multiplier for sensitivity
-            const y = (e.clientY / innerHeight - 0.5) * 60; // Adjust the multiplier for sensitivity
-            setBgPosition({ x, y });
-        };
-        window.addEventListener('mousemove', handleMouseMove);
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
   return (
     <div
       onClick={onClick}
       className={`w-full
-      bg-[#1e293b] 
-      border border-[#00FF00]
-      p-6
-      rounded-lg
-      cursor-pointer
-      {/*transition-all duration-300*/}
-      transition-colors duration-100
-      bg-blue-500/10
-      backdrop-blur-md
-       hover:bg-blue-500/20
-      ${className}
-      ${isOpen 
-        ? "bg-transparent border border-[#00FF00]-500 "
-        : "bg-transparent hover:bg-"
-}      `}
+        border-2 border-dashed border-[#16a34a]
+        p-6
+        cursor-pointer
+        transition-all duration-300
+        //backdrop-blur-md
+        ${
+          isOpen
+            ? "bg-transparent shadow-[0_0_20px_rgba(0,255,0,0.4)]"
+            : "bg-[#1e293b] hover:bg-[#243447]"
+        }
+        ${className}
+      `}
     >
       <div className="flex justify-between items-center gap-4">
-        
-        {/* ✅ Increased text size but controlled width */}
-        <h3 className="text-2xl text-white-400 leading-tight break-words">
+        <h3 className="text-2xl text-white leading-tight break-words">
           {question}
         </h3>
 
-        <Play 
+        {/* <Play
           strokeWidth={3.5}
           className={`transition-transform duration-300 shrink-0 ${
             isOpen ? "rotate-90 text-[#00FF00]" : "text-[#00FF00]"
           }`}
-        />
+        /> */}
+        <Hammer
+          size={32}
+          strokeWidth={3}
+          className={`
+           shrink-0
+           transition-all duration-200
+          ${isOpen ? "rotate-45 scale-110" : ""}
+           text-[#4CAF50]
+   `}
+/>
       </div>
 
       {isOpen && (
-        <div className="mt-4 text-lg leading-relaxed break-words">
+        <div className="mt-4 text-2xl text-gray-300 leading-relaxed break-words">
           {answer}
         </div>
       )}
@@ -295,20 +297,22 @@ export default function Faq() {
   };
 
   return (
-    <section id="faq" className="relative z-[1] py-16 px-6 text-white scroll-mt-[120px]">
-      
-      <h2 className="text-center text-[#00FF00] mb-12 text-4xl md:text-6xl">
+    <section
+      id="faq"
+      className="relative z-[1] py-16 px-6 text-white scroll-mt-[120px]"
+    >
+      <h2 className=" text-center md:text-left text-[#FAF9F6] mb-12 text-4xl md:text-6xl md:pl-24">
         FREQUENTLY ASKED QUESTIONS
       </h2>
 
-      {/* ✅ Mobile = column | Desktop = 2 columns */}
+      {/* Mobile = column | Desktop = 2 columns */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
 
         {/* LEFT COLUMN */}
         <div className="flex flex-col gap-6 w-full md:flex-1">
           <FaqItem
             question="How many team members do I need?"
-            answer="You can participate individually or in teams of 3 to 5 members. If you are participating individually and looking for a team, we will help you connect with others."
+            answer="You can participate individually or in teams of 3 to 5 members."
             isOpen={openIndex === 0}
             onClick={() => toggle(0)}
           />
@@ -322,25 +326,29 @@ export default function Faq() {
 
           <FaqItem
             question="How do I register?"
-            answer={(
-               <span>
-               Register your team @
-               <a target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-500" href="add link..">Devfolio</a>
-               </span>
-        )}
+            answer={
+              <span>
+                Register your team at{" "}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 underline hover:text-blue-300"
+                  href="#"
+                >
+                  Devfolio
+                </a>
+              </span>
+            }
             isOpen={openIndex === 2}
             onClick={() => toggle(2)}
           />
 
-          <div >
           <FaqItem
             question="Is food and accommodation free?"
-            answer="We've got you covered when it comes to food, water, and coffee they're on us.
-             However, any additional snacks can be purchased separately. As for accommodation, we will provide arrangements similar to those found in other hackathons, which typically involve a set of mattresses in a common hall."  
+            answer="Food and basic accommodation will be provided. Extra snacks are separate."
             isOpen={openIndex === 3}
             onClick={() => toggle(3)}
           />
-          </div>
         </div>
 
         {/* RIGHT COLUMN */}
@@ -350,39 +358,30 @@ export default function Faq() {
             answer="It will be completely offline."
             isOpen={openIndex === 4}
             onClick={() => toggle(4)}
+            className=""
           />
 
           <FaqItem
             question="What are the prerequisites?"
-            answer="No prerequisites are required to participate in this hackathon.
-                    This event is open to participants of all skill levels."
-//   },"
+            answer="No prerequisites are required. Open for all skill levels."
             isOpen={openIndex === 5}
             onClick={() => toggle(5)}
           />
 
           <FaqItem
             question="What is the venue?"
-            answer="BIT Sindri."
+            answer="BIT Sindri, Dhanbad."
             isOpen={openIndex === 6}
             onClick={() => toggle(6)}
           />
 
-
           <FaqItem
-            question="Can my friend join our team after we have already submitted the application for review?"
-            answer={(
-              <span>
-                Yes, your friend can join the team by submitting an individual application. Once both your friend's individual application and your team's application are accepted, you will be able to add your friend to the team. For more information, please refer to devfolio's guide: &nbsp;
-                <a target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-300" href="https://guide.devfolio.co/hackers/faqs#after-submitting-the-team-for-review">How To Add Team Members</a>
-              </span>
-            )}
+            question="Can my friend join after submission?"
+            answer="Yes, your friend can submit an individual application and join once both are approved."
             isOpen={openIndex === 7}
             onClick={() => toggle(7)}
-            className='py-2.5'
           />
         </div>
-
       </div>
     </section>
   );

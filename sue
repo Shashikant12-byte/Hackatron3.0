@@ -1,0 +1,21 @@
+*   [33m0d46976[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m)[m Merge pull request #15 from Shashikant12-byte/faq-issue
+[31m|[m[32m\[m  
+[31m|[m * [33m181012f[m[33m ([m[1;31morigin/faq-issue[m[33m, [m[1;32mfaq-issue[m[33m)[m Faq Changes made2
+[31m|[m * [33m595b4dc[m Changes Made In FAQ Component
+* [32m|[m   [33me65a1bd[m Merge pull request #17 from Ashish-Kr-1/feature/PastSponsors
+[32m|[m[34m\[m [32m\[m  
+[32m|[m [34m|[m[32m/[m  
+[32m|[m[32m/[m[34m|[m   
+[32m|[m * [33m5db8f61[m Added past sponsors section
+[32m|[m[32m/[m  
+*   [33m498bddb[m Merge pull request #14 from Ashish-Kr-1/feature/scrollbar
+[35m|[m[36m\[m  
+[35m|[m * [33md149fe6[m Added custom scrollbar for the website
+* [36m|[m   [33ma1e5c31[m Merge pull request #10 from aysh-mzmdr/prizes
+[36m|[m[1;32m\[m [36m\[m  
+[36m|[m [1;32m|[m[36m/[m  
+[36m|[m[36m/[m[1;32m|[m   
+[36m|[m * [33m602b62b[m Updated the prize section
+[36m|[m[36m/[m  
+* [33m24d3ba6[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Removed configs
+* [33m6d240cd[m first commit
