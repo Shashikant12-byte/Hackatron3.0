@@ -8,9 +8,11 @@ import Tracks from './components/Tracks/Tracks'
 import Sponsors from './components/Sponsors/Sponsors'
 import About from './components/AboutUs/About'
 import Wihts from './components/Wihts/Wihts'
+import PastSponsors from './components/Sponsors/PastSponsors'
 import Faq from './components/Faq/Faq'
 import Cp from './components/Cp/Cp'
 import Venue from './components/Venue/Venue'
+import CustomScrollbar from './components/CustomScrollbar/CustomScrollbar';
 // import CursorFollower from './components/CursorFollower';
 
 import LandingPage from './pages/LandingPage'
@@ -20,6 +22,7 @@ function App() {
 
   return (
     <>
+      <CustomScrollbar />
       {/* <CursorFollower /> */}
       <Navbar />
       <LandingPage />
@@ -30,7 +33,8 @@ function App() {
       <Prizes />
       <Tracks />
       <Sponsors />
-      <Cp />
+      <PastSponsors />
+      {/* <Cp /> */}
       <Faq />
       <Discord />
       <Footer />
