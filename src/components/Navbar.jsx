@@ -39,6 +39,28 @@ export default function Navbar() {
             footerSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
+
+
+
+
+
+
+const scrollToAbout = () => {
+    const section = document.getElementById('aboutus');
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
+const scrollToVenue = () => {
+    const section = document.getElementById('venue');
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
+
+
     return (
         <section className="w-full relative">
             <nav className="fixed items-center 3xl:px-[250px] px-7 z-30 flex md:justify-between bg-gradient-to-b max-[768px]:space-x-5 from-[#040842] to-[#040842]  w-full h-[96px] 3xl:h-[250px] max-[540px]:h-[60px] mt-0 bg-blue-800 font-vt323 leading-[96px] ">
@@ -47,6 +69,23 @@ export default function Navbar() {
 
                 <ul className=" justify-center flex 3xl:text-6xl 3xl:space-x-[7rem]  2xl:space-x-[4rem] lg:space-x-[2rem] sm:space-x-[1.2rem] sm:text-[22px] min-[540px]:space-x-[1.6rem] min-[540px]:text-[22px] md:text-[22px] md:space-x-5 lg:text-[1.6rem] xl:text-[2rem] text-white items-center max-[768px]:hidden ">
                     <a onClick={scrollToSchedule} ><li className="hover:text-[#c3c3c3] cursor-pointer">SCHEDULE</li></a>
+
+
+
+
+
+<a onClick={scrollToAbout}>
+  <li className="hover:text-[#c3c3c3] cursor-pointer">ABOUT</li>
+</a>
+
+<a onClick={scrollToVenue}>
+  <li className="hover:text-[#c3c3c3] cursor-pointer">VENUE</li>
+</a>
+
+
+
+
+
                     <a onClick={scrollToPrizes} ><li className="hover:text-[#c3c3c3] cursor-pointer">PRIZES</li></a>
                     <a onClick={scrollToTracks}><li className="hover:text-[#c3c3c3] cursor-pointer">TRACKS</li></a>
                     <a onClick={scrollToSponsors}><li className="hover:text-[#c3c3c3] cursor-pointer">SPONSORS</li></a>
