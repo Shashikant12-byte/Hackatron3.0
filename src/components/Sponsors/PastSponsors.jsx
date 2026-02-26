@@ -152,7 +152,7 @@ const PastSponsors = () => {
             <div
                 className="absolute h-screen top-[99%] object-cover opacity-70 inset-0"
                 style={{
-                    backgroundImage: `url(${stars})`,
+                    //backgroundImage: `url(${stars})`,
                     backgroundPosition: `${50}% ${50 + bgPosition.y}%`,
                     backgroundSize: bgSize,
                     backgroundRepeat: 'no-repeat',
