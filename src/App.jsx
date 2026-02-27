@@ -28,10 +28,10 @@ function App() {
       {/* <CursorFollower /> */}
       <Navbar />
       <LandingPage />
-      <About/>
-      <Wihts/>
+      <About />
+      <Wihts />
       <Hackatron2 />
-      <Venue/>
+      <Venue />
       <Prizes />
       <Tracks />
       <Sponsors />

@@ -42,7 +42,14 @@ const ImageCard = ({ src1, src2, src3, className, content, content2 }) => {
 
 const Glimpse = () => {
   return (
-    <SectionLayout Title="PREVIOUS EVENTS" id="Glimpse">
+    <SectionLayout
+      Title={
+        <span className="text-[#9E9E9E]">
+          $ man <span className="text-white">Hackatron</span> <span className="text-[#ff0000]">2.0</span>
+        </span>
+      }
+      id="Glimpse"
+    >
       <div className="glimpse-container">
         {glimpseConfig.map((item) => (
           <ImageCard

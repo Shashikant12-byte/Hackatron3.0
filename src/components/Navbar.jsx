@@ -46,28 +46,28 @@ export default function Navbar() {
 
 
 
-const scrollToAbout = () => {
-    const section = document.getElementById('aboutus');
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-};
+    const scrollToAbout = () => {
+        const section = document.getElementById('aboutus');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
-const scrollToVenue = () => {
-    const section = document.getElementById('venue');
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-};
+    const scrollToVenue = () => {
+        const section = document.getElementById('venue');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
 
 
     return (
         /* Fix: Added z-[1000] to the section wrapper and relative positioning */
-        <section className="w-full relative z-[1000]" style={{background:"none"}}>
-            <nav className="fixed items-center 3xl:px-[250px] px-7 
+        <section className="w-full relative z-[1000]" style={{ background: "none" }}>
+            <nav className="fixed items-center 3xl:px-[250px] px-4 md:px-7 
                 /* Fix Navbar sitting behind: Added z-[1000] */
-                z-[1000] flex md:justify-between max-[768px]:space-x-5 
+                z-[1000] flex justify-between 
                 w-full h-[96px] 3xl:h-[250px] max-[540px]:h-[60px] 
                 mt-0 font-vt323 leading-[96px] 
                 /* Theme Change: Removed #040842/50, added deep jungle black-green */
@@ -75,15 +75,15 @@ const scrollToVenue = () => {
 
                 {/* Pixelated Logo Effect */}
                 <a href="https://hackatron3-0.vercel.app/" target="_blank">
-                <img 
-                    className="justify-start w-14 h-14 max-md:w-10 max-md:h-10 3xl:w-[300px] 3xl:h-[300px] pixel-art" 
-                    src={sc1_logo} 
-                    alt="Hackatron Logo" 
-                />
+                    <img
+                        className="justify-start w-14 h-14 max-md:w-10 max-md:h-10 3xl:w-[300px] 3xl:h-[300px] pixel-art"
+                        src={sc1_logo}
+                        alt="Hackatron Logo"
+                    />
                 </a>
 
                 <ul className="justify-center flex 3xl:text-6xl 3xl:space-x-[7rem] 2xl:space-x-[4rem] lg:space-x-[2rem] sm:space-x-[1.2rem] sm:text-[22px] min-[540px]:space-x-[1.6rem] min-[540px]:text-[22px] md:text-[22px] md:space-x-5 lg:text-[1.6rem] xl:text-[2rem] text-white items-center max-[768px]:hidden ">
-                    
+
                     {/* Updated Link Styles */}
                     {[
                         { name: 'SCHEDULE', func: scrollToSchedule },
@@ -103,21 +103,18 @@ const scrollToVenue = () => {
                     ))}
                 </ul>
 
-                <div className="flex gap-4 items-center">
-                   <a href="https://hackatron3-0.vercel.app/" target="_blank">
+                <div className="flex gap-4 max-md:gap-2 items-center">
+                    <a href="https://hackatron3-0.vercel.app/" target="_blank">
 
-                    <img className="w-12 h-12 max-md:w-8 max-md:h-8 rendering-pixelated" src={bitlogo} alt="" />
+                        <img className="w-12 h-12 max-md:w-8 max-md:h-8 rendering-pixelated" src={bitlogo} alt="" />
                     </a>
                     <a href="https://www.hnccbits.com/" target="_blank">
-                    <img className="w-14 h-14 max-md:w-10 max-md:h-10 rendering-pixelated" src={iiit_logo_mobile} alt="" 
-                    />
+                        <img className="w-14 h-14 max-md:w-10 max-md:h-10 rendering-pixelated" src={iiit_logo_mobile} alt=""
+                        />
                     </a>
+                    <SwipeableTemporaryDrawer />
                 </div>
             </nav>
-
-            <div className="fixed right-4 z-[1001] max-[540px]:mt-[12px] mt-[25px]">
-                <SwipeableTemporaryDrawer />
-            </div>
         </section>
     );
 }

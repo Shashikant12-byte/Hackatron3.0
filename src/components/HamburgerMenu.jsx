@@ -23,7 +23,6 @@ export default function SwipeableTemporaryDrawer() {
       <button
         onClick={() => setOpen(true)}
         className="
-          fixed top-[22px] right-6 z-[9999]
           p-2
           bg-[#080c0a]/80
           border border-[#39FF14]/20
@@ -56,7 +55,7 @@ export default function SwipeableTemporaryDrawer() {
           sx={{ width: '100%' }}
         >
           <List className="relative z-10 pt-4">
-            
+
             {/* NEW: CLOSE OPTION */}
             <ListItem disablePadding>
               <ListItemButton
@@ -109,7 +108,7 @@ export default function SwipeableTemporaryDrawer() {
                       fontFamily: 'vt323',
                       // Material UI Specific Hover Color override
                       '&:hover': {
-                        color: '#39FF14', 
+                        color: '#39FF14',
                       }
                     }}
                   />

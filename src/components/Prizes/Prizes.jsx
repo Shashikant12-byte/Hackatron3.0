@@ -46,7 +46,7 @@ const Prizes = () => {
                 <div className="flex justify-center items-center h-full">
                     <div className="px-4 sm:p-10 text-left w-[90vw] sm:w-[80vw] mx-auto">
                         {/* Main Rectangle */}
-                        <div className="flex justify-between border-[6px] max-lg:border-4 border-dashed border-[#0384fc] w-full h-auto mb-4 overflow-hidden">
+                        <div className="flex justify-between border-[6px] max-lg:border-4 border-dashed border-[#0384fc] w-full h-auto mb-4 overflow-hidden transition-all duration-300 hover:shadow-[0_0_45px_rgba(3,132,252,0.45)] hover:-translate-y-1">
                             <div className="flex items-center">
                                 {/* Text on the left side */}
                                 <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl  whitespace-nowrap lg:p-10 sm:pl-4 pl-1 tracking-wide">
@@ -65,7 +65,7 @@ const Prizes = () => {
 
                         {/* Two Rectangles Below Main */}
                         <div className="flex flex-col xs:flex-row w-full justify-between mb-4 xl:mb-0 gap-2">
-                            <div className="flex justify-between border-[6px] max-lg:border-4 border-dashed border-purple w-full h-auto mb-4 lg:py-4 2xl-py-8 overflow-hidden">
+                            <div className="flex justify-between border-[6px] max-lg:border-4 border-dashed border-purple w-full h-auto mb-4 lg:py-4 2xl-py-8 overflow-hidden transition-all duration-300 hover:shadow-[0_0_45px_rgba(168,85,247,0.45)] hover:-translate-y-1">
                                 <div className="flex items-center w-fit">
                                     <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl  whitespace-nowrap p-2 pl-1 tracking-wide">
                                         <h2 className='w-fit'>&nbsp;SECOND PRIZE</h2>
@@ -80,7 +80,7 @@ const Prizes = () => {
                                 </div>
                             </div>
 
-                            <div className="flex justify-between border-[6px] max-lg:border-4 border-dashed border-purple w-full h-auto mb-4 lg:py-4 2xl:py-8 overflow-hidden">
+                            <div className="flex justify-between border-[6px] max-lg:border-4 border-dashed border-purple w-full h-auto mb-4 lg:py-4 2xl:py-8 overflow-hidden transition-all duration-300 hover:shadow-[0_0_45px_rgba(168,85,247,0.45)] hover:-translate-y-1">
                                 <div className="flex items-center">
                                     <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
                                         <h2>&nbsp;THIRD PRIZE</h2>

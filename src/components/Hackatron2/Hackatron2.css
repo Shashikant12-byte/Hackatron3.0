@@ -13,6 +13,7 @@ hackatron2-container {
   margin: auto;
   max-width: 1200px;
 }
+
 .section-title {
   font-size: 50px;
   font-family: 'VT323', monospace;
@@ -56,12 +57,18 @@ hackatron2-container {
   justify-content: space-between;
 }
 
-.image-container > img {
-  border-radius:0;
+.image-container>img {
+  border-radius: 0;
   object-fit: cover;
   width: 70%;
   filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg);
   border: 4px dashed #00FF00;
+  transition: all 0.3s ease;
+}
+
+.image-container>img:hover {
+  box-shadow: 0 0 45px rgba(0, 255, 0, 0.45);
+  transform: translateY(-4px);
 }
 
 
@@ -73,12 +80,12 @@ hackatron2-container {
   justify-content: center;
   align-items: center;
   width: 40%;
-  font-family:'VT323', monospace ;
+  font-family: 'VT323', monospace;
   text-align: center;
 }
 
 .glimpse-container .image-card:first-child .content:last-child {
-  color:  #00FF00;
+  color: #00FF00;
 }
 
 .glimpse-container .image-card:first-child .content:first-child {
@@ -112,13 +119,19 @@ hackatron2-container {
   width: 28%;
 }
 
-.right-container > img {
+.right-container>img {
   width: 100%;
   height: 100%;
   border-radius: 0 px;
   object-fit: cover;
   filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg);
   border: 4px dashed #00FF00;
+  transition: all 0.3s ease;
+}
+
+.right-container>img:hover {
+  box-shadow: 0 0 45px rgba(0, 255, 0, 0.45);
+  transform: translateY(-4px);
 }
 
 .bottom-container {
@@ -133,17 +146,23 @@ hackatron2-container {
   color: #00FF00;
 }
 
-.bottom-container > img {
+.bottom-container>img {
   border-radius: 0 px;
   object-fit: cover;
   filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg);
   border: 4px dashed #00FF00;
+  transition: all 0.3s ease;
+}
+
+.bottom-container>img:hover {
+  box-shadow: 0 0 45px rgba(0, 255, 0, 0.45);
+  transform: translateY(-4px);
 }
 
 @media screen and (max-width: 1500px) {
   .section-title {
-  font-size: 20px;
-}
+    font-size: 20px;
+  }
 
   .content h2 {
     font-size: 4.5rem;
@@ -153,15 +172,15 @@ hackatron2-container {
     font-size: 2rem;
   }
 
-  .image-container > img {
+  .image-container>img {
     height: 235px;
   }
 
-  .right-container > img {
+  .right-container>img {
     height: 500px;
   }
 
-  .bottom-container > img {
+  .bottom-container>img {
     height: 230px;
   }
 }
@@ -175,15 +194,15 @@ hackatron2-container {
     font-size: 1.5rem;
   }
 
-  .image-container > img {
+  .image-container>img {
     height: 185px;
   }
 
-  .right-container > img {
+  .right-container>img {
     height: 400px;
   }
 
-  .bottom-container > img {
+  .bottom-container>img {
     height: 180px;
   }
 }
@@ -209,17 +228,17 @@ hackatron2-container {
     font-size: 1.4rem;
   }
 
-  .image-container > img {
+  .image-container>img {
     height: 167px;
     border-radius: 0px;
   }
 
-  .right-container > img {
+  .right-container>img {
     height: 350px;
     border-radius: 0px;
   }
 
-  .bottom-container > img {
+  .bottom-container>img {
     height: 150px;
     border-radius: 0px;
   }
@@ -234,15 +253,15 @@ hackatron2-container {
     font-size: 1.3rem;
   }
 
-  .image-container > img {
+  .image-container>img {
     height: 142px;
   }
 
-  .right-container > img {
+  .right-container>img {
     height: 300px;
   }
 
-  .bottom-container > img {
+  .bottom-container>img {
     height: 130px;
   }
 }
@@ -268,15 +287,15 @@ hackatron2-container {
     font-size: 1.1rem;
   }
 
-  .image-container > img {
+  .image-container>img {
     height: 126px;
   }
 
-  .right-container > img {
+  .right-container>img {
     height: 260px;
   }
 
-  .bottom-container > img {
+  .bottom-container>img {
     height: 110px;
   }
 }
@@ -290,15 +309,15 @@ hackatron2-container {
     font-size: 1rem;
   }
 
-  .image-container > img {
+  .image-container>img {
     height: 106px;
   }
 
-  .right-container > img {
+  .right-container>img {
     height: 220px;
   }
 
-  .bottom-container > img {
+  .bottom-container>img {
     height: 90px;
   }
 }
@@ -311,35 +330,38 @@ hackatron2-container {
   .content p {
     font-size: 0.8rem;
   }
-  #Glimpse {
-  margin-bottom: -20px;
-}
-  
-.glimpse-container {
-  margin: 20px 0 0 0;  /* bottom margin remove */
-}
-.image-card {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  gap: 1.5rem;
-}
 
-  .image-container > img {
+  #Glimpse {
+    margin-bottom: -20px;
+  }
+
+  .glimpse-container {
+    margin: 20px 0 0 0;
+    /* bottom margin remove */
+  }
+
+  .image-card {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .image-container>img {
     height: 100px;
     border-radius: 0px;
     border: 2px dashed #00FF00;
     gap: 1.5rem;
   }
 
-  .right-container > img {
+  .right-container>img {
     height: 180px;
     border-radius: 0px;
-    border: 2px dashed #00FF00;  
+    border: 2px dashed #00FF00;
     gap: 1.5rem;
   }
 
-  .bottom-container > img {
+  .bottom-container>img {
     height: 70px;
     border-radius: 0px;
     border: 2px dashed #00FF00;
@@ -364,11 +386,11 @@ hackatron2-container {
     font-size: 0.7rem;
   }
 
-  .image-container > img {
+  .image-container>img {
     height: 70px;
   }
 
-  .right-container > img {
+  .right-container>img {
     height: 150px;
   }
 
@@ -376,7 +398,7 @@ hackatron2-container {
     margin-top: 10px;
   }
 
-  .bottom-container > img {
+  .bottom-container>img {
     height: 60px;
   }
 }
