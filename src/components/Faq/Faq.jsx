@@ -1,5 +1,5 @@
 
- import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Play } from "lucide-react";
 
 const FaqItem = ({ question, answer, isOpen, onClick, className = "" }) => {
