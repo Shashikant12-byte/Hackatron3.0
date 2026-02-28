@@ -70,9 +70,11 @@ export default function Faq() {
       className="relative z-[1] py-16 px-6 text-white scroll-mt-[120px]"
     >
        <div className="max-w-7xl mx-auto px-6 md:px-10">
-      <h2 className=" text-left  text-white mb-12 text-3xl md:text-left md:text-5xl sm:text-3xl ">
-        FREQUENTLY ASKED QUESTIONS
-      </h2>
+
+        <h1 className="py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]">
+                    $ grep -i help <span className="text-white">FAQ</span>.txt
+                </h1>
+      
 
       {/* Mobile = column | Desktop = 2 columns */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">

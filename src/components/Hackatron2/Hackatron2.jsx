@@ -38,7 +38,7 @@ const Hackatron2 = () => {
 
       {/* <img src={stars} className=" z-0 absolute pointer-events-none w-screen sm:opacity-60 opacity-80"></img>
             <div className='text-white max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto relative'>
-                <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ man <span className='text-white'>Hackatron<span className='text-red'> 2.0</span></span></h1>
+                <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ tar -xf <span className='text-white'>Hackatron 2.0<span className='text-red'></span></span>.tar.gz</h1>
                 <div className='grid gallery place-content-center relative'>
 
 

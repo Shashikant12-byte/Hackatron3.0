@@ -74,12 +74,12 @@ export default function Navbar() {
                 bg-[#080c0a]/80 border-b border-[#39FF14]/20 backdrop-blur-md">
 
                 {/* Pixelated Logo Effect */}
-                <a href="https://hackatron3-0.vercel.app/" target="_blank">
-                    <img
-                        className="justify-start w-14 h-14 max-md:w-10 max-md:h-10 3xl:w-[300px] 3xl:h-[300px] pixel-art"
-                        src={sc1_logo}
-                        alt="Hackatron Logo"
-                    />
+                <a href="/#hero" >
+                <img 
+                    className="justify-start w-14 h-14 max-md:w-10 max-md:h-10 3xl:w-[300px] 3xl:h-[300px] pixel-art" 
+                    src={sc1_logo} 
+                    alt="Hackatron Logo" 
+                />
                 </a>
 
                 <ul className="justify-center flex 3xl:text-6xl 3xl:space-x-[7rem] 2xl:space-x-[4rem] lg:space-x-[2rem] sm:space-x-[1.2rem] sm:text-[22px] min-[540px]:space-x-[1.6rem] min-[540px]:text-[22px] md:text-[22px] md:space-x-5 lg:text-[1.6rem] xl:text-[2rem] text-white items-center max-[768px]:hidden ">
@@ -103,14 +103,14 @@ export default function Navbar() {
                     ))}
                 </ul>
 
-                <div className="flex gap-4 max-md:gap-2 items-center">
-                    <a href="https://hackatron3-0.vercel.app/" target="_blank">
+                <div className="flex gap-4 items-center">
+                   <a href="/#hero" >
 
                         <img className="w-12 h-12 max-md:w-8 max-md:h-8 rendering-pixelated" src={bitlogo} alt="" />
                     </a>
-                    <a href="https://www.hnccbits.com/" target="_blank">
-                        <img className="w-14 h-14 max-md:w-10 max-md:h-10 rendering-pixelated" src={iiit_logo_mobile} alt=""
-                        />
+                    <a href="/#hero" >
+                    <img className="w-14 h-14 max-md:w-10 max-md:h-10 rendering-pixelated" src={iiit_logo_mobile} alt="" 
+                    />
                     </a>
                     <SwipeableTemporaryDrawer />
                 </div>
