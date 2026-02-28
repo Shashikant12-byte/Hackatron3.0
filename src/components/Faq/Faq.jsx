@@ -28,7 +28,7 @@ const FaqItem = ({ question, answer, isOpen, onClick, className = "" }) => {
         //backdrop-blur-md
         ${
           isOpen
-            ? "bg-transparent shadow-[0_0_20px_rgba(0,255,0,0.4)]"
+            ? "bg-[#1e293b] shadow-[0_0_20px_rgba(0,255,0,0.4)]"
             : "bg-[#1e293b] hover:bg-[#243447]"
         }
         ${className}
@@ -107,19 +107,18 @@ export default function Faq() {
             onClick={() => toggle(1)}
             className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
           />
-          
+
           <FaqItem
-            question="Can I participate alone or in need a team?"
-            answer="No, You cannot participate alone. Your team must comprise of 4 to 5 members including at least one female member."
+            question="What is the duration of Hackathon?"
+            answer="The Hackathon will last for 36 hours."
             isOpen={openIndex === 2}
             onClick={() => toggle(2)}
             className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
           />
           
-
           <FaqItem
-            question="What is the duration of Hackathon?"
-            answer="The Hackathon will last for 36 hours."
+            question="Can I participate alone or in need a team?"
+            answer="No, You cannot participate alone. Your team must comprise of 4 to 5 members including at least one female member."
             isOpen={openIndex === 3}
             onClick={() => toggle(3)}
             className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
@@ -137,17 +136,16 @@ export default function Faq() {
         {/* RIGHT COLUMN */}
         <div className="flex flex-col gap-6 w-full md:flex-1 ">
           <FaqItem
-            question="Will the hackathon be online or offline?"
-            answer="It will be completely offline."
+            question="Who can participate in HACKATRON?"
+            answer="Any engineering student from any college can participate."
             isOpen={openIndex === 5}
             onClick={() => toggle(5)}
             className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
             
           />
-
           <FaqItem
-            question="Who can participate in HACKATRON?"
-            answer="Any engineering student from any college can participate."
+            question="Will the hackathon be online or offline?"
+            answer="It will be completely offline."
             isOpen={openIndex === 6}
             onClick={() => toggle(6)}
             className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
@@ -171,11 +169,11 @@ export default function Faq() {
           />
 
           <FaqItem
-            question="What are the benefits that participants will get by attending Hackathon?"
+            question="What are benefits of attending Hackathon?"
             answer="Participants will get swags, certificates, and exciting prizes."
             isOpen={openIndex === 9}
             onClick={() => toggle(9)}
-            className="pb-1.5 pt-1.5 md:pb-0 md:pt-0"
+            
           />
         </div>
       </div>
