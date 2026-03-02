@@ -49,10 +49,10 @@ function Footer() {
                                     <h1 className="footerheading m-0 text-heading-footer drop-shadow-md">
                                         ADDRESS
                                     </h1>
-                                    <p className="footercontent addresscontent text-[#BEBEBE] hover:text-white mt-1 md:mt-2 drop-shadow-md leading-tight">
-                                        <a href="https://www.google.com/maps/place/BIT+Sindri/@23.6546341,86.4688101,1020m/data=!3m2!1e3!4b1!4m6!3m5!1s0x39f696e95958a6d5:0x7c14e668e6f2feea!8m2!3d23.6546293!4d86.473681!16s%2Fm%2F0267xn8?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                                            <span className="text-style-footer">A-26, Admin Building<br /></span>
-                                            <span className="text-style-footer">BIT Sindri</span>
+                                    <p className="footercontent addresscontent text-[#BEBEBE] mt-1 md:mt-2 drop-shadow-md leading-tight">
+                                        <a href="https://www.google.com/maps/place/BIT+Sindri/@23.6546341,86.4688101,1020m/data=!3m2!1e3!4b1!4m6!3m5!1s0x39f696e95958a6d5:0x7c14e668e6f2feea!8m2!3d23.6546293!4d86.473681!16s%2Fm%2F0267xn8?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                                            <span>A-26, Admin Building<br /></span>
+                                            <span>BIT Sindri</span>
                                         </a>
                                     </p>
                                 </div>
@@ -85,17 +85,15 @@ function Footer() {
                                     </div>
 
                                     {/* CONTACT DETAILS */}
-                                    <h1 className="footerheading footerelements text-center m-0 mt-6 md:mt-8 mb-1 md:mb-2 text-heading-footer drop-shadow-md">
-                                        CONTACT US
-                                    </h1>
-                                    <div className="flex flex-col mt-2 md:mt-3 gap-2">
+                                    {/* CONTACT DETAILS */}
+                                    <div className="flex flex-col mt-3 md:mt-4">
                                         <div className="flex justify-center items-center gap-2 text-center">
-                                            <span className="text-[#BEBEBE] text-sm md:text-base font-medium">Anshuman:</span>
-                                            <a href="tel:+918409370501" className="text-[#00FF00] hover:text-white transition-colors text-xs md:text-sm font-mono">+91 84093 70501</a>
+                                            <span className="footercontent text-[#BEBEBE]">Anshuman:</span>
+                                            <a href="tel:+918409370501" className="footercontent text-[#BEBEBE] cursor-default">+91 8409370501</a>
                                         </div>
                                         <div className="flex justify-center items-center gap-2 text-center">
-                                            <span className="text-[#BEBEBE] text-sm md:text-base font-medium">Anuj:</span>
-                                            <a href="tel:+916205811362" className="text-[#00FF00] hover:text-white transition-colors text-xs md:text-sm font-mono">+91 62058 11362</a>
+                                            <span className="footercontent text-[#BEBEBE]">Anuj:</span>
+                                            <a href="tel:+916205811362" className="footercontent text-[#BEBEBE] cursor-default">+91 6205811362</a>
                                         </div>
                                     </div>
                                 </div>
