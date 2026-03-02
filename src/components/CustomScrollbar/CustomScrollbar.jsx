@@ -23,9 +23,12 @@ const CustomScrollbar = () => {
         { id: 'sponsors', bgPos: '50% 0%' },    // Handshake
         { id: 'past-sponsors', bgPos: '50% 0%' }, // reusing Handshake icon
         { id: 'faq', bgPos: '100% 0%' },        // Question Mark
+        { id: 'contact', bgPos: '100% 100%' },  // Envelope (Same as Footer)
         { id: 'footer', bgPos: '100% 100%' },   // Envelope
         { id: 'upfooter', bgPos: '100% 100%' }  // Envelope
     ];
+
+    //Comment
 
     useEffect(() => {
         let rafId;

@@ -60,12 +60,10 @@ function Footer() {
                                 <div className="resources footerelements text-center">
                                     <h1 className="footerheading m-0 text-heading-footer drop-shadow-md">RESOURCES</h1>
                                     <div className="flex flex-col mt-1 md:mt-2 gap-1 md:gap-2">
-                                        <a href="add link here" className="footercontent resourcecontent text-[#BEBEBE] hover:text-white drop-shadow-md" target="_blank" rel="noopener noreferrer">
+                                        <a href="/brochure/Hackatron3.0.pdf" download="Hackatron3.0.pdf" className="footercontent resourcecontent text-[#BEBEBE] hover:text-white drop-shadow-md" target="_blank" rel="noopener noreferrer">
                                             Sponsorship Brochure
                                         </a>
-                                        <a href="add rule book link here" className="footercontent resourcecontent text-[#BEBEBE] hover:text-white drop-shadow-md" target="_blank" rel="noopener noreferrer">
-                                            Hacker Guide
-                                        </a>
+
                                     </div>
                                 </div>
                                 {/* STAY CONNECTED */}
