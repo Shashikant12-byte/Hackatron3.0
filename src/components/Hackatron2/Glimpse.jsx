@@ -17,7 +17,7 @@ const ImageCard = ({ src1, src2, src3, className, content, content2 }) => {
         style={{ flexFlow: className ? "column-reverse" : "" }}
       >
         <div className="image-container">
-          <img src={src1} height="270" width="570" alt="event" loading="lazy" decoding="async" />
+          <img loading="lazy" src={src1} height="270" width="570" alt="event" decoding="async" />
           <div className="content">
             <h2>{numbers[0]}+</h2>
             <p>{text}</p>
@@ -29,12 +29,12 @@ const ImageCard = ({ src1, src2, src3, className, content, content2 }) => {
             <h2>{numbers2[0]}+</h2>
             <p>{text2}</p>
           </div>
-          <img src={src3} height="370" width="570" alt="event" loading="lazy" decoding="async" />
+          <img loading="lazy" src={src3} height="370" width="570" alt="event" decoding="async" />
         </div>
       </div>
 
       <div className="right-container">
-        <img src={src2} height="600" width="262" alt="event" loading="lazy" decoding="async" />
+        <img loading="lazy" src={src2} height="600" width="262" alt="event" decoding="async" />
       </div>
     </div>
   );
@@ -66,7 +66,7 @@ const Glimpse = () => {
         ))}
 
         <div className="bottom-container">
-          <img
+          <img 
             src="/images/glimpse/pic7 (1).webp"
             width="500"
             height="150"

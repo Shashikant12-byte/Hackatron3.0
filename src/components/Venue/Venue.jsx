@@ -38,7 +38,7 @@ const Venue = () => {
           <div className="space-y-8">
 
             <div className="group flex gap-6 items-start border-[6px] max-lg:border-4 border-dashed border-[#7f7cff] bg-[#050826]/30 backdrop-blur-[1px] p-6 md:p-8 transition-all duration-300 hover:shadow-[0_0_45px_rgba(127,124,255,0.45)] hover:-translate-y-1">
-              <img
+              <img loading="lazy"
                 src="/images/Venue.webp"
                 alt="venue"
                 className="w-16 h-16 md:w-20 md:h-20 pixelated object-contain"
@@ -56,7 +56,7 @@ const Venue = () => {
             </div>
 
             <div className="group flex gap-6 items-start border-[6px] max-lg:border-4 border-dashed border-[#0384fc] bg-[#050826]/30 backdrop-blur-[1px] p-6 md:p-8 transition-all duration-300 hover:shadow-[0_0_45px_rgba(3,132,252,0.45)] hover:-translate-y-1">
-              <img
+              <img loading="lazy"
                 src="/images/Date.webp"
                 alt="date & Time"
                 className="w-16 h-16 md:w-20 md:h-20 pixelated object-contain"
@@ -74,7 +74,7 @@ const Venue = () => {
             </div>
 
             <div className="group flex gap-6 items-start border-[6px] max-lg:border-4 border-dashed border-purple bg-[#050826]/30 backdrop-blur-[1px] p-6 md:p-8 transition-all duration-300 hover:shadow-[0_0_45px_rgba(168,85,247,0.45)] hover:-translate-y-1">
-              <img
+              <img loading="lazy"
                 src="/images/Join.webp"
                 alt="Why Join"
                 className="w-16 h-16 md:w-20 md:h-20 pixelated object-contain"
