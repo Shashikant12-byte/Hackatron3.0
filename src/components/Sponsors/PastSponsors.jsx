@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import stars from '../../assets/images/footer/stars.svg';
-import bugseeLogo from '../../assets/images/past_sponsors/bugsee.png';
-import codingBlocksLogo from '../../assets/images/past_sponsors/coding-blocks.png';
-import creativeTimLogo from '../../assets/images/past_sponsors/creative-tim.png';
-import educativeLogo from '../../assets/images/past_sponsors/educative.png';
-import teqipLogo from '../../assets/images/past_sponsors/teqip.png';
-import microsoftLogo from '../../assets/images/past_sponsors/microsoft-azure-new.png';
-import reskilllLogo from '../../assets/images/past_sponsors/reskilll.png';
-import devfolioLogo from '../../assets/images/past_sponsors/devfolio.png';
+import bugseeLogo from '../../assets/images/past_sponsors/bugsee.webp';
+import codingBlocksLogo from '../../assets/images/past_sponsors/coding-blocks.webp';
+import creativeTimLogo from '../../assets/images/past_sponsors/creative-tim.webp';
+import educativeLogo from '../../assets/images/past_sponsors/educative.webp';
+import teqipLogo from '../../assets/images/past_sponsors/teqip.webp';
+import microsoftLogo from '../../assets/images/past_sponsors/microsoft-azure-new.webp';
+import reskilllLogo from '../../assets/images/past_sponsors/reskilll.webp';
+import devfolioLogo from '../../assets/images/past_sponsors/devfolio.webp';
 import ethIndiaLogo from '../../assets/images/past_sponsors/ETH-India.webp';
-import devtownLogo from '../../assets/images/past_sponsors/devtown.jpg';
-import technixLogo from '../../assets/images/past_sponsors/Technix_.jpg';
-import amulLogo from '../../assets/images/past_sponsors/amul.png';
+import devtownLogo from '../../assets/images/past_sponsors/devtown.webp';
+import technixLogo from '../../assets/images/past_sponsors/Technix_.webp';
+import amulLogo from '../../assets/images/past_sponsors/amul.webp';
 import mayaLogo from '../../assets/images/past_sponsors/MAYALOGO.webp';
-import geekRoomLogo from "../../assets/images/past_sponsors/geekRoom.jpeg"
+import geekRoomLogo from "../../assets/images/past_sponsors/geekRoom.webp"
 
 const PastSponsors = () => {
     const [bgSize, setBgSize] = useState("110%");
@@ -99,7 +99,7 @@ const PastSponsors = () => {
                                 >
                                     {/* Logo panel — restoring white background, no blue padding */}
                                     <div className="flex items-center justify-center w-full h-full p-3 bg-white rounded-xl shadow-sm overflow-hidden">
-                                        <img
+                                        <img loading="lazy"
                                             src={sponsor.img}
                                             alt={sponsor.alt}
                                             className={`max-w-full max-h-full w-auto h-auto object-contain transition-all duration-300 ${sponsor.alt === "Microsoft Azure" ? "scale-[1.5]" : ""}`}
