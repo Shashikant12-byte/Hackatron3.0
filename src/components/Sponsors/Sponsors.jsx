@@ -26,6 +26,14 @@ import routerLogo from '../../assets/images/sponsors/router.svg';*/
 import devfolioLogo2026 from '../../assets/images/Sponsors2026/Devfolio-logo.webp';
 import codeCrafterLogo2026 from '../../assets/images/Sponsors2026/CodeCrafters-logo.webp';
 import sybgenLogo2026 from '../../assets/images/Sponsors2026/SYBGEN-logo.webp';
+import interviewCakeLogo2026 from '../../assets/images/Sponsors2026/interview-cake-logo.webp';
+
+
+import ProgressiveImage from "../ProgressiveImage";
+import devfolioLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/Devfolio-logo.webp';
+import codeCrafterLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/CodeCrafters-logo.webp';
+import sybgenLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/SYBGEN-logo.webp';
+import interviewCakeLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/interview-cake-logo.webp';
 
 const Sponsors = () => {
     const [bgSize, setBgSize] = useState("110%");
@@ -112,7 +120,9 @@ const Sponsors = () => {
                         <div className='relative group'>
                             <Link to='https://devfolio.co/' target="_blank" rel="noopener noreferrer" className="relative flex flex-col items-center justify-center w-[60vw] h-[100px] sm:w-[15vw] sm:h-[120px] 3xl:w-[15rem] transition-all duration-300 hover:scale-105">
                                 <div className="flex items-center justify-center w-full h-full p-4 bg-white rounded-2xl shadow-[0_0_25px_rgba(226,155,41,0.3)] hover:shadow-[0_0_25px_rgba(226,155,41,0.7)] transition-all duration-300 overflow-hidden">
-                                    <img loading="lazy" src={devfolioLogo2026} alt="DEVFOLIO LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain' />
+                                <ProgressiveImage
+                                 src={devfolioLogo2026} alt="DEVFOLIO LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain'
+                                 placeholder = {devfolioLogo2026Mini}/>
                                 </div>
                                 <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
                                     <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">DEVFOLIO</p>
@@ -129,7 +139,8 @@ const Sponsors = () => {
                         <div className='relative group'>
                             <Link to='https://codecrafters.io/' target="_blank" rel="noopener noreferrer" className="relative flex flex-col items-center justify-center w-[60vw] h-[100px] sm:w-[15vw] sm:h-[120px] 3xl:w-[15rem] transition-all duration-300 hover:scale-105">
                                 <div className="flex items-center justify-center w-full h-full p-4 bg-white rounded-2xl shadow-[0_0_25px_rgba(158,158,158,0.3)] hover:shadow-[0_0_25px_rgba(158,158,158,0.7)] transition-all duration-300 overflow-hidden">
-                                    <img loading="lazy" src={codeCrafterLogo2026} alt="CODECRAFTERS LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain' />
+                                    <ProgressiveImage  src={codeCrafterLogo2026} alt="CODECRAFTERS LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain'
+                                    placeholder = {codeCrafterLogo2026Mini}/>
                                 </div>
                                 <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
                                     <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">CODECRAFTERS</p>
@@ -146,12 +157,23 @@ const Sponsors = () => {
                         <div className='relative group'>
                             <Link to='https://sybgen.com/' target="_blank" rel="noopener noreferrer" className="relative flex flex-col items-center justify-center w-[60vw] h-[100px] sm:w-[15vw] sm:h-[120px] 3xl:w-[15rem] transition-all duration-300 hover:scale-105">
                                 <div className="flex items-center justify-center w-full h-full p-4 bg-white rounded-2xl shadow-[0_0_25px_rgba(157,68,192,0.3)] hover:shadow-[0_0_25px_rgba(157,68,192,0.7)] transition-all duration-300 overflow-hidden">
-                                    <img loading="lazy" src={sybgenLogo2026} alt="SYBGEN LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain' />
+                                   <ProgressiveImage src={sybgenLogo2026} alt="SYBGEN LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain' placeholder = {sybgenLogo2026Mini}/>
                                 </div>
                                 <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
                                     <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">SYBGEN</p>
                                 </div>
                             </Link>
+
+                            <Link to='https://www.interviewcake.com/' target="_blank" rel="noopener noreferrer" className="relative flex mt-20 flex-col items-center justify-center w-[60vw] h-[100px] sm:w-[15vw] sm:h-[120px] 3xl:w-[15rem] transition-all duration-300 hover:scale-105">
+                                <div className="flex items-center justify-center w-full h-full p-4 bg-white rounded-2xl shadow-[0_0_25px_rgba(157,68,192,0.3)] hover:shadow-[0_0_25px_rgba(157,68,192,0.7)] transition-all duration-300 overflow-hidden">
+                                    <ProgressiveImage src={interviewCakeLogo2026} alt="SYBGEN LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain'
+                                    placeholder = {interviewCakeLogo2026Mini}/>
+                                </div>
+                                <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
+                                    <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">INTERVIEW-CAKE</p>
+                                </div>
+                            </Link>
+
                         </div>
                     </div>
                 </div>
