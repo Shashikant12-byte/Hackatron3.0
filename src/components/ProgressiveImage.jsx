@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ProgressiveImage = ({ src, placeholder, alt, ...props }) => {
+const ProgressiveImage = ({ src, placeholder, alt, style, ...props }) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
@@ -11,6 +11,7 @@ const ProgressiveImage = ({ src, placeholder, alt, ...props }) => {
           alt={alt}
           {...props}
           style={{
+            ...style,
             filter: "blur(12px)",
             transform: "scale(1.05)"
           }}
@@ -25,6 +26,7 @@ const ProgressiveImage = ({ src, placeholder, alt, ...props }) => {
         {...props}
         onLoad={() => setLoaded(true)}
         style={{
+          ...style,
           display: loaded ? "block" : "none"
         }}
       />

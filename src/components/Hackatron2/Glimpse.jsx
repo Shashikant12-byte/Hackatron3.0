@@ -5,11 +5,6 @@ import { glimpseConfig } from "../../../config/glimpse";
 import ProgressiveImage from "../ProgressiveImage";
 
 
-const getBlurSrc = (src) => {
-  const parts = src.split(".");
-  return `${parts[0]}-blur.${parts[1]}`;
-};
-
 const ImageCard = ({
   src1,
   src2,
@@ -111,28 +106,24 @@ const Glimpse = () => {
         ))}
 
         <div className="bottom-container">
-          <img 
-            src="/images/glimpse/pic7 (1).webp"
+          <ProgressiveImage
+          src="/images/glimpse/pic7 (1).webp"
             width="500"
             height="150"
             alt="event"
-            loading="lazy"
-            decoding="async"
-          />
+            placeholder="/images/glimpse/glimpseMini/pic71.webp"/>
 
           <div className="content">
             <h2>50+</h2>
             <p>SUCCESSFUL EVENTS</p>
           </div>
 
-          <img
-            src="/images/glimpse/pic12 (1).webp"
+          <ProgressiveImage
+          src="/images/glimpse/pic12 (1).webp"
             width="450"
             height="300"
             alt="event"
-            loading="lazy"
-            decoding="async"
-          />
+            placeholder="/images/glimpse/glimpseMini/pic121.webp"/>
         </div>
       </div>
     </SectionLayout>
