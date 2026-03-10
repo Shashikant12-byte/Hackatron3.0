@@ -57,7 +57,7 @@ const Prizes = () => {
             alt="Prize"
             className="w-32 md:w-100 lg:w-48 md:h-90 mb-4 object-contain"
         />
-        <h2 className="text-2xl md:text-6xl font-semibold">CASH PRIZE</h2>
+        <h2 className="text-2xl md:text-6xl font-semibold">CASH PRIZES</h2>
         <h2 className="text-3xl md:text-5xl text-blue-500 mt-2 font-semibold">₹50000</h2>
 
     </div>
